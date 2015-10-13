@@ -23,7 +23,7 @@ Version HADOOP : 2.7.0
 5. After extracting it, move it to -  
 	/usr/local/hadoop
    
-6. Edit bashrc file and added following lines- 
+6. Edit .bashrc file and added following lines- 
 
      	export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
     	export HADOOP_HOME=/usr/local/hadoop
