@@ -35,7 +35,7 @@ Learn more about hadoop from https://github.com/youngwookim/awesome-hadoop
 
 The Apache Hive ™ data warehouse software facilitates querying and managing large datasets residing in distributed storage. Hive provides a mechanism to project structure onto this data and query the data using a SQL-like language called HiveQL. At the same time this language also allows traditional map/reduce programmers to plug in their custom mappers and reducers when it is inconvenient or inefficient to express this logic in HiveQL.  
 
-Components of Hive include HCatalog and WebHCat.
+Components of Hive include HCatalog and WebHCat.  
     **HCatalog** is a component of Hive. It is a table and storage management layer for Hadoop that enables users with different data processing tools — including Pig and MapReduce — to more easily read and write data on the grid.  
     **WebHCat** provides a service that you can use to run Hadoop MapReduce (or YARN), Pig, Hive jobs or perform Hive metadata operations using an HTTP (REST style) interface.  
     
