@@ -55,3 +55,39 @@ Analysis on Twitter Data-
     
     Here LOCATION tells where data is stored in HDFS. If want to take data from local path then remove `LOCATION '/user/flume/tweets'` and end the statement. Run this separate command separately:  
     `LOAD DATA INPATH <LOCATION> INTO TABLE <TABLE NAME LIKE HERE twitter>`. 
+
+RUNNING SIMPLE HIVE QUERIES
+===========================
+
+Always run this command `ADD JAR /<jar file location>/hive-serdes-1.0-SNAPSHOT.jar;` as it defines how that data is going to serialized and deserialized.
+
+Run this query to get retweets and tweets of various users.
+
+     SELECT
+      t.retweeted_screen_name,
+      sum(retweets) AS total_retweets,
+      count(*) AS tweet_count
+    FROM (SELECT
+            retweeted_status.`user`.screen_name as retweeted_screen_name,
+             retweeted_status.text,
+             max(retweeted_status.retweet_count) as retweets
+          FROM tweets
+          GROUP BY retweeted_status.`user`.screen_name,
+                   retweeted_status.text) t
+    GROUP BY t.retweeted_screen_name
+    ORDER BY total_retweets DESC
+    LIMIT 10;
+
+| |	t.retweeted_screen_name	|total_retweets	|tweet_count|
+| ------------- |:-------------:|:---------:|:----:|
+|0|	mask303|	1716|	1|
+|1|	tableau|	559	|1|
+|2|	SoftLayer|	125	|1|
+|3|	CloudExpo|	87	|10|
+|4|	Mackey_Trib|	37|	1|
+|5|	LUFC	|30	|1|
+|6|	DrSanjayPSahoo|	26	|19|
+|7|	macworld|	17|	1|
+|8|	WHMeanor|	|11	|11|
+|9|	hortonworks|	11|	1|
+
