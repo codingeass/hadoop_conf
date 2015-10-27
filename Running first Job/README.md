@@ -78,6 +78,8 @@ Run this query to get retweets and tweets of various users.
     ORDER BY total_retweets DESC
     LIMIT 10;
 
+Output looks like this :-
+
 | |	t.retweeted_screen_name	|total_retweets	|tweet_count|
 | ------------- |:-------------:|:---------:|:----:|
 |0|	mask303|	1716|	1|
@@ -91,3 +93,8 @@ Run this query to get retweets and tweets of various users.
 |8|	WHMeanor|	|11	|11|
 |9|	hortonworks|	11|	1|
 
+If using hive editor you can visualize this result :-
+
+![TDD](https://raw.githubusercontent.com/codingeass/hadoop_conf/master/Running%20first%20Job/Screenshot.png)
+
+![TDD](https://raw.githubusercontent.com/codingeass/hadoop_conf/master/Running%20first%20Job/Screenshot_1.png)
