@@ -61,3 +61,42 @@ Hive services :
 Learn more about hive from https://cwiki.apache.org/confluence/display/Hive/Home  
 
 (source : hive.apache.org)
+
+
+### Oozie
+
+Apache Oozie is a Java Web application used to schedule Apache Hadoop jobs. Oozie combines multiple jobs sequentially into one logical unit of work. It is integrated with the Hadoop stack, with YARN as its architectural center, and supports Hadoop jobs for Apache MapReduce, Apache Pig, Apache Hive, and Apache Sqoop. Oozie can also schedule jobs specific to a system, like Java programs or shell scripts.  
+
+
+
+Apache Oozie is a tool for Hadoop operations that allows cluster administrators to build complex data transformations out of multiple component tasks. This provides greater control over jobs and also makes it easier to repeat those jobs at predetermined intervals. At its core, Oozie helps administrators derive more value from Hadoop.  
+
+There are two basic types of Oozie jobs:
+
+  1. **Oozie Workflow** jobs are Directed Acyclical Graphs (DAGs), specifying a sequence of actions to execute. The Workflow job has to wait.  
+  2. **Oozie Coordinator** jobs are recurrent Oozie Workflow jobs that are triggered by time and data availability.
+  Oozie Bundle provides a way to package multiple coordinator and workflow jobs and to manage the lifecycle of those jobs.
+  
+  **Oozie Bundle** provides a way to package multiple coordinator and workflow jobs and to manage the lifecycle of those jobs.
+
+(source : http://hortonworks.com/hadoop/oozie/)
+
+### Apache Spark
+
+Apache Spark is an open source cluster computing framework originally developed in the AMPLab at University of California, Berkeley but was later donated to the Apache Software Foundation where it remains today. In contrast to Hadoop's two-stage disk-based MapReduce paradigm, Spark's multi-stage in-memory primitives provides performance up to 100 times faster for certain applications.    
+Apache Spark is a fast and general-purpose cluster computing system.   
+It provides high-level APIs in following languages: 
+  1. Java
+  2. Scala
+  3. Python
+  4. R
+It also supports a rich set of higher-level tools including Spark SQL for SQL and structured data processing, MLlib for machine learning, GraphX for graph processing, and Spark Streaming.
+
+Spark requires a cluster manager and a distributed storage system.   
+  **Cluster management**: Spark supports standalone (native Spark cluster), Hadoop YARN, or Apache Mesos.  
+  **Distributed storage**: Spark can interface with a wide variety, including Hadoop Distributed File System (HDFS), Cassandra, OpenStack Swift, Amazon S3, Kudu, or a custom solution can be implemented. Spark also supports a pseudo-distributed local mode, usually used only for development or testing purposes, where distributed storage is not required and the local file system can be used instead; in such a scenario, Spark is run on a single machine with one executor per CPU core.  
+
+Learn more about Apache Spark from http://spark.apache.org/docs/latest/sql-programming-guide.html .
+
+
+(source : https://en.wikipedia.org/wiki/Apache_Spark)
