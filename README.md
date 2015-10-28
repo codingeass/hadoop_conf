@@ -149,3 +149,14 @@ Hue applications run in a Web browser and require no client installation.
 </p>
 
 (source : http://www.cloudera.com/)
+
+### Livy, the REST Spark Server
+
+Livy is an open source REST interface for interacting with Spark from anywhere. It supports executing snippets of code or programs in a Spark context that runs locally or in YARN.
+
+* Interactive Scala, Python and R shells
+* Batch submissions in Scala, Java, Python
+* Multi users can share the same server (impersonation support)
+* Can be used for submitting jobs from anywhere with REST
+* Does not require any code change to your programs
+
