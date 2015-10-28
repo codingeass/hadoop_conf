@@ -143,8 +143,9 @@ On top of that, an SDK is available for creating new apps integrated with Hadoop
 
 **Hue Architecture**  
 Hue applications run in a Web browser and require no client installation.  
-
-
-![TDD](https://raw.githubusercontent.com/codingeass/hadoop_conf/a1b026bbd140f86b9f1efa2faa3a55157aec20db/hue.jpeg)
+<br/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/codingeass/hadoop_conf/a1b026bbd140f86b9f1efa2faa3a55157aec20db/hue.jpeg"/>
+</p>
 
 (source : http://www.cloudera.com/)
