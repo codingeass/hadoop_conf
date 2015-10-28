@@ -126,3 +126,25 @@ Pig was designed for performing a long series of data operations, making it idea
 
 (Resource : http://hortonworks.com/hadoop/pig/)
 
+### Apache Hue
+
+Hue is an open source Web interface for analyzing data with any Apache Hadoop.
+
+It features:
+
+   * SQL Editors for Hive, Impala, MySql, PostGres, Sqlite and Oracle
+   * Dynamic search dashboards for Solr
+   * Spark Notebooks
+   * Browsers for YARN, HDFS, Hive table Metastore, HBase, ZooKeeper
+   * Pig Editor, Sqoop2, Oozie workflows Editors and Dashboards
+   * Wizards to import data into Hadoop
+
+On top of that, an SDK is available for creating new apps integrated with Hadoop.
+
+**Hue Architecture**  
+Hue applications run in a Web browser and require no client installation.  
+
+
+![TDD](https://raw.githubusercontent.com/codingeass/hadoop_conf/a1b026bbd140f86b9f1efa2faa3a55157aec20db/hue.jpeg)
+
+(source : http://www.cloudera.com/)
