@@ -100,3 +100,29 @@ Learn more about Apache Spark from http://spark.apache.org/docs/latest/sql-progr
 
 
 (source : https://en.wikipedia.org/wiki/Apache_Spark)
+
+
+### Apache Pig
+
+Pig is a high level scripting language that is used with Apache Hadoop. Pig enables data workers to write complex data transformations without knowing Java. Pig’s simple SQL-like scripting language is called Pig Latin, and appeals to developers already familiar with scripting languages and SQL.  
+
+Pig is complete, so you can do all required data manipulations in Apache Hadoop with Pig. Through the User Defined Functions(UDF) facility in Pig, Pig can invoke code in many languages like JRuby, Jython and Java. You can also embed Pig scripts in other languages. The result is that you can use Pig as a component to build larger and more complex applications that tackle real business problems.  
+
+Pig works with data from many sources, including structured and unstructured data, and store the results into the Hadoop Data File System. Pig scripts are translated into a series of MapReduce jobs that are run on the Apache Hadoop cluster.     
+
+Pig was designed for performing a long series of data operations, making it ideal for three categories of Big Data jobs:
+
+1. **Extract-transform-load (ETL)** data pipelines,  
+2. **Research** on raw data, and  
+3. **Iterative data processing**.  
+ 
+
+
+|Characteristic|	Benefit|
+|:----:|:-----|
+|Extensible|	Pig users can create custom functions to meet their particular processing requirements|
+|Easily programmed|	Complex tasks involving interrelated data transformations can be simplified and encoded as data flow sequences. Pig programs accomplish huge tasks, but they are easy to write and maintain.|
+|Self-optimizing|	Because the system automatically optimizes execution of Pig jobs, the user can focus on semantics.|
+
+(Resource : http://hortonworks.com/hadoop/pig/)
+
