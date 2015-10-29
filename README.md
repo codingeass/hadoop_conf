@@ -2,7 +2,7 @@
 
 This repository contains configuration for setup of tools :  
 
-  - [Apache Hadoop](#hadoop)
+  - [Apache Hadoop](#apache-hadoop)
   - [Apache Hive](#hive)  
   - Oozie  
   - Spark  
