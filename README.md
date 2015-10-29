@@ -3,12 +3,12 @@
 This repository contains configuration for setup of tools :  
 
   - [Apache Hadoop](#apache-hadoop)
-  - [Apache Hive](#hive)  
-  - Oozie  
-  - Spark  
-  - Pig  
-  - Hue  
-  - Livy Spark  
+  - [Apache Hive](#apache-hive)  
+  - [Oozie](#oozie)  
+  - [Apache Spark](#apache-spark)  
+  - [Apache Pig](#apache-pig)  
+  - [Apache Hue](#apache-hue)  
+  - [Livy](#livy-the-rest-spark-server)  
 
 ## About these tools :
 
