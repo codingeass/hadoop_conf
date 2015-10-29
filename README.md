@@ -160,3 +160,8 @@ Livy is an open source REST interface for interacting with Spark from anywhere. 
 * Can be used for submitting jobs from anywhere with REST
 * Does not require any code change to your programs
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/codingeass/hadoop_conf/master/Livy%20server%20architecture.png"/>
+</p>
+
+(source : http://gethue.com/)
